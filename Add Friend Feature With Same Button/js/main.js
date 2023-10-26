@@ -15,11 +15,20 @@ add.addEventListener("click", function(){
     remove.style.backgroundColor = "#0866ff"
     remove.style.color = "white"
     remove.style.display = "block"
+    check = 1
   }else{
-    add
+    add.innerHTML = "Add Friend"
+    add.style.color = "white"
+    add.style.backgroundColor = "#20b2aa"
+    remove.style.display = "none"
+    istatus.innerHTML = "Stranger"
+    istatus.style.color = "red"
+
+
+
+    check = 0
   }
 })
 
-remove.addEventListener("click", function(){
 
-})
+
