@@ -5,3 +5,33 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
 }
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: none; /* Hide the default cursor */
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Add this to make the container full height */
+}
+
+#main .cursor {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(237, 237, 237);
+  position: absolute;
+  transition: transform 0.1s ease-in-out; /* Add a transition for smooth movement */
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%); /* Center the cursor on the mouse pointer */
+}
+
+#main h1 {
+  font-size: 10vw;
+  font-weight: 900;
+}
