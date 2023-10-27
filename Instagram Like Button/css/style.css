@@ -1,9 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
+body {
+  background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#logo img {
+  width: 200px;
+  position: relative;
+  right: 17rem;
+  bottom: 16rem;
+}
+
+#container {
+  width: 400px;
+  height: 550px;
+  background-color: #c13584;
+  color: black; /* Text color for content within #container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 67px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 167px;
+}
+
+#container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#container i {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: transform ease 0.3s;
+  color: #cf157e;
+}
 
